@@ -1,0 +1,1380 @@
+/* style */
+/* 141E61 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+     
+    
+}
+
+.home .back-ground img{
+ position: absolute;
+ top: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ object-position: 85%;
+ filter: brightness(80%);
+}
+
+.home .heading {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    column-gap: 22px;
+}
+
+.home .heading h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Merienda', cursive;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+    letter-spacing: 2px;
+}
+
+.home .heading p{
+    width: 300px;
+}
+
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 1px;
+    transition: .3s;
+    
+}
+
+.home .heading .buton{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+    column-gap: 8px;
+    
+    background-color: #00454A;
+    color: white;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    margin-top: 10px;
+    transition: .46s;
+}
+
+
+.home .heading .buton a{
+    text-decoration: none;
+    color: white;
+}
+
+.home .heading .buton:hover{
+    background-color: #045757;
+    
+
+}
+
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li i{
+    transform: translateY(0px);
+    font-size: 19px;
+    margin-right: 4px;
+    color: #fff;
+    transition: .6s;
+    font-weight: 400;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: .6s;
+    font-weight: 400;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+
+header .logo{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-left: 25px;
+    text-rendering: .1s;
+    
+}
+
+
+header .logo span{
+    color: #FF8F56;
+    font-weight: 700;
+
+}
+
+header.sticky{
+    background-color: #fff;
+    box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, 0.178);
+    
+}
+
+header.sticky .logo{
+    color: rgb(70, 66, 66);
+    font-weight: 600;
+}
+
+header.sticky a{
+    color: rgb(70, 66, 66);
+    font-weight: 400;
+    
+}
+header.sticky i{
+    color: rgb(70, 66, 66);
+    font-weight: 400;
+}
+
+header .nav-menu{
+    display: none;
+}
+
+#about-indonesia{
+  
+  margin-top: 100px;
+    padding: 50px 80px;
+    
+}
+
+#about-indonesia .destination-topic{
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+
+}
+
+#about-indonesia .destination-topic .content{
+    margin-top: 60px;
+}
+
+#about-indonesia .destination-topic .content h3{
+    font-family: 'Merienda', cursive;
+    font-size: 33px;
+    color: #00454A;
+    margin-bottom: 30px;
+}
+
+#about-indonesia .destination-topic .content p{
+    max-width: 850px;
+    font-size: 18px;
+}
+
+
+#about-indonesia .destination-topic .imgbox{
+    position: relative;
+    width: 600px;
+    height: 340px;
+    overflow: hidden;
+    z-index: 99;
+
+}
+
+#about-indonesia .destination-topic .imgbox-right{
+    position: absolute;
+    width: 250px;
+    height: 340px;
+    overflow: hidden;
+    top: 35px;
+    right: 130px;
+    z-index: 111;
+}
+
+#about-indonesia .destination-topic .imgbox-left{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    top: -30px;
+    left: 130px;
+    z-index: 9;
+}
+
+#about-indonesia .destination-topic .imgbox-left img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    transition: .35s;
+    
+}
+
+#about-indonesia .destination-topic .imgbox-right img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    transition: .35s;
+}
+
+#about-indonesia .destination-topic .imgbox-right img:hover{
+    transform: scale(1.1);
+}
+
+#about-indonesia .destination-topic .imgbox-left img:hover{
+    transform: scale(1.1);
+}
+
+#about-indonesia .destination-topic .imgbox:hover img{
+    transform: scale(1.1);
+}
+
+#about-indonesia .destination-topic .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    transition: .35s;
+}
+
+
+
+#about-indonesia h2{
+    text-align: center;
+    color: #00454A;
+    font-size: 45px;
+    letter-spacing: 2.5px;
+    margin-top: 30px;
+    font-family: 'Merienda', cursive;
+}
+
+   
+
+#about-indonesia .content-box{
+ margin: 20px auto;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+align-items: center;
+}
+
+
+#about-indonesia .content-box .content{
+    width: 700px;
+    text-align: right;
+    line-height: 27px;
+    color: rgb(15, 15, 15);
+
+}
+
+#about-indonesia .content-box .content h4{
+    font-size: 24px;
+    color: #045757;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+   
+}
+
+#about-indonesia .content-box .imgbox{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    
+
+}
+
+
+#about-indonesia .content-box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    transition: .35s;
+}
+
+#about-indonesia .content-box .imgbox img:hover {
+    transform: scale(1.1);
+}
+
+#about-indonesia .content-box .buton{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 535px;
+    column-gap: 8px;
+    letter-spacing: 2px;
+    background-color: #00454A;
+    color: white;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    margin-top: 10px;
+    transition: .3s;
+    text-align: right;
+}
+
+
+#about-indonesia .content-box .buton a{
+    text-decoration: none;
+    color: white;
+}
+
+#about-indonesia .content-box .buton:hover{
+    background-color: #045757;
+}
+
+
+
+
+
+#about-indonesia .content-box .content p{
+    margin-bottom: 30px;
+}
+
+
+#about-indonesia .tourist-info h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+#about-indonesia .tourist-info .button{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+   
+    transition: .35s;
+}
+
+
+
+#about-indonesia .tourist-info .button button{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #00373b;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .35s;
+    cursor: pointer;
+}
+
+#about-indonesia .tourist-info .button:hover button{
+    background-color: #026868;
+}
+
+
+#about-indonesia .tourist-info{
+    margin-bottom: 130px;
+}
+
+
+#about-indonesia .tourist-info .title-statistic{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+#about-indonesia .tourist-info .title-statistic h4{
+    color: #026868;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+#about-indonesia .tourist-info .title-statistic h4 span{
+    color: #00373b;
+    font-size: 19px;
+    margin-top: 15px;
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+    margin-top: -8px;
+}
+
+
+
+#destination{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#destination .more-des{
+    position: absolute;
+    right: 75px;
+    bottom: 280px;
+    background-color: #00454A;
+    padding: 8px 15px;
+    padding-top:12px;
+    transition: .25s;
+    
+}
+
+#destination .more-des a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+#destination .more-des:hover{
+   transform: scale(1.08);
+}
+
+#destination .header-destination{
+    text-align: center;
+
+}
+
+
+#destination .header-destination h2{
+    color: #00454A;
+    font-size: 35px;
+    font-family: 'Merienda', cursive;
+}
+
+
+#destination .destination-select{
+    display: flex;
+    justify-content: space-around;
+    row-gap: 20px;
+    width: 1000px;
+
+}
+
+#destination .destination-select .imgbox{
+    background-color: #045757;  
+    position: relative;
+    width: 300px;
+    height: 440px;
+    overflow: hidden;
+}
+#destination .destination-select .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    transition: .35s;
+    filter: brightness(65%);
+}
+
+#destination .destination-select .imgbox img:hover{
+    transform: scale(1.1);
+    filter: brightness(95%);
+}
+
+#destination .destination-select .imgbox .ssf{
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    opacity: 80%;
+    left: 20px;
+    top: 320px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    font-family: 'Merienda', cursive;
+}
+
+#destination .destination-select .imgbox .ssf span{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(197, 197, 197);
+    letter-spacing: 0;
+}
+
+#destination .destination-select .imgbox .ssf .price{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin-top: 8px;
+}
+
+#destination .destination-select .imgbox .stars{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 9999;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+#destination .destination-select .imgbox .top-destination{
+    font-size: 21px;
+    font-weight: 700;
+    padding: 15px;
+    background-color: #ffb700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+#destination .destination-select .imgbox .more{
+    font-size: 21px;
+    font-weight: 700;
+    padding: 13px 21px;
+    background-color: #026868;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    font-weight: 600;
+    transition: .35s;
+}
+#destination .destination-select .imgbox .more a{
+    text-decoration: none;
+    color: white;
+}
+
+#destination .destination-select .imgbox .more:hover{
+    padding: 13px 28px;
+}
+
+#destination .more2{
+    display: none;
+}
+
+#contact {
+    position: relative;
+    padding-top: 170px;
+    margin-bottom: 100px;
+   
+   
+
+}
+
+#contact .contact-bar{
+    height: 300px;
+    width: 65%;
+    background-color: #045757;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 30px;
+    padding : 18px;
+    position: relative;
+
+}
+
+
+#contact .contact-bar textarea{
+    outline: none;
+    width: 400px;
+    height: 55px;
+    overflow: scrolly;
+    padding: 4px;
+    border: none;
+    resize: none;
+    margin-top: 40px;
+    border-radius: 3px;
+}
+
+#contact .contact-bar h3{
+    color: #fff;
+    font-size: 30px;
+}
+#contact .contact-bar p{
+    color: white;
+    letter-spacing: 1px;
+
+
+}
+#contact .contact-bar button{
+    padding: 8px 33px;
+    color: #fff;
+    background-color: #00454A;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+    transition: .35s;
+}
+
+#contact .contact-bar button:hover{
+    letter-spacing: 2px;
+    background-color: #00373b;
+}
+
+#contact .contact-bar .about-testi{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    z-index: 9999;
+    top: 11px;
+    right: 11px;
+    background-color: rgb(251, 251, 251);
+    color: #1a1a1a;
+    text-align: center;
+    font-weight: 600;
+}
+
+#contact .contact-bar .about-testi a{
+    text-decoration: none;
+
+}
+
+
+#contact .contact-bar .testi-watermark{
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 11px;
+    left: 13px;
+    color: #c3c3c3dc;
+    font-weight: 600;
+}
+
+.footer{
+    height: 100vh;
+    padding: 60px;
+    position: relative;
+  
+}
+.footer .last{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 35px;
+
+}
+
+.footer .last .subscribe{
+    width: 580px;
+    padding: 20px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    row-gap: 5px;
+    
+}
+.footer .last .subscribe h4{
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Merienda', cursive;
+    
+}
+.footer .last .subscribe p{
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .last .subscribe .form button{
+    border: none;
+    background-color: #00454A;
+    color: white;
+    padding: 7px;
+}
+.footer .last .subscribe .form input{
+    outline: none;
+    width: 220px;
+    height: 35px;
+    
+
+}
+
+.footer .last .subscribe a{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+    font-weight: 500;
+  
+}
+
+.footer .credits{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 250px;
+    background-color: #00454A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .last .about{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.footer .last .about h4{
+ font-size: 25px;
+ font-family: 'Merienda', cursive;
+}
+
+.footer .backgroun img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 85%;
+    filter: brightness(55%);
+   }
+
+.footer .credits .section, .section1, .section2, .section3{
+ height: 200px;
+ width: 18%;
+ /* background-color: cornflowerblue; */
+ color: rgb(206, 206, 206);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+
+ 
+}
+footer .credits .section{
+    text-align: left;
+    
+}
+
+.footer .credits .section1 p{
+    font-size: 14px;
+    margin-top: -30px;
+}
+
+.footer .credits .section1 .logo{
+    font-size: 33px;
+}
+
+.footer .credits .section1 .logo span{
+    color: #FF8F56;
+}
+
+.footer .credits .section1{
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.footer .credits .section a{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    letter-spacing: 1px;
+    transition: .35s;
+}
+
+.footer .credits .section3 a{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    letter-spacing: 1px;
+    transition: .35s;
+}
+
+.footer .credits .section a:hover{
+    color: white;
+}
+
+.footer .credits .section2{
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .credits .section2 .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 24px;
+    padding: 10px;
+    width: 180px;
+    
+}
+.footer .credits .section2 h3{
+    font-size: 28px;
+}
+
+/* breaks points */
+
+@media screen and (max-width: 576px) {
+    
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 55px;
+        right: 0;
+        background-color: white;
+        
+        
+        /* transform: translateX(100%); */
+    }
+
+    header{
+        background-color: white;
+    }
+
+    header ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 0%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        height: 90%;
+        transition: .3s;
+        
+    }
+
+    header ul.slide{
+        width: 50%;
+    }
+
+    header ul li{
+        height: 25%;
+        transition: 0.2s;
+    }
+   
+    
+    header ul li i{
+        transform: translateY(0px);
+        font-size: 19px;
+        margin-right: 4px;
+        color: black;
+        transition: .6s;
+        font-weight: 400;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        transition: .6s;
+        font-weight: 400;
+    }
+    
+    header ul li:hover{
+        background-color: #045757;
+    }
+
+    header ul li:hover a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    header ul:hover li i{
+        color: white;
+    }
+
+    
+    
+
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .heading {
+        position: static;
+        z-index: 9999;
+        margin: auto;
+        color: rgb(228, 228, 228);
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .heading h1{
+        font-size: 45px;
+        line-height: 60px;
+        font-family: 'Merienda', cursive;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .home .heading p{
+        width: 300px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+        margin-bottom: 10px;
+    }
+
+    #about-indonesia{
+  
+        margin-top: 30px;
+          padding: 30px 30px;
+          
+      }
+        
+    #about-indonesia h2{
+        text-align: center;
+        color: #00454A;
+        font-size: 35px;
+        letter-spacing: 2.5px;
+        margin-top: 20px;
+        font-family: 'Merienda', cursive;
+    }
+
+    
+
+    #about-indonesia .content-box{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    align-items: center;
+    }
+
+
+    #about-indonesia .content-box .content{
+        width: 400px;
+        text-align: right;
+        line-height: 27px;
+        color: rgb(15, 15, 15);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #about-indonesia .content-box .content h4{
+        font-size: 24px;
+        color: #045757;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        font-family: 'Merienda', cursive;
+    
+    }
+
+    #about-indonesia .content-box .imgbox{
+        position: relative;
+        width: 270px;
+        height: 360px;
+        overflow: hidden;
+        transform: rotateZ(270deg);
+        margin-top: -50px;        
+
+    }
+
+
+    #about-indonesia .content-box .buton{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 8px;
+        letter-spacing: 2px;
+        background-color: #00454A;
+        color: white;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin-top: 10px;
+        transition: .3s;
+        text-align: right;
+    }
+
+
+    #about-indonesia .content-box .content p{
+        margin-bottom: 20px;
+    }
+
+    #about-indonesia .destination-topic .imgbox-left img{
+        opacity: 0;
+        transition: 0s;
+    }
+
+      
+    #about-indonesia .destination-topic .imgbox-right img{
+        opacity: 0;
+        transition: 0s;
+    }
+
+    #about-indonesia .destination-topic .imgbox{
+        position: relative;
+        width: 420px;
+        height: 234px;
+        overflow: hidden;
+        
+    
+    }
+
+    #about-indonesia .destination-topic .imgbox:hover img{
+        transform: scale(1.1);
+    }
+
+    #about-indonesia .destination-topic .content{
+        margin-top: 60px;
+    }
+    
+    #about-indonesia .destination-topic .content h3{
+        font-family: 'Merienda', cursive;
+        font-size: 30px;
+        color: #00454A;
+        margin-bottom: 30px;
+    }
+    
+    #about-indonesia .destination-topic .content p{
+        max-width: 850px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    
+    #about-indonesia .destination-topic .content{
+        margin-top: 20px;
+    }
+
+    #about-indonesia .tourist-info h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    
+    #about-indonesia .tourist-info .button{
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+       
+        transition: .35s;
+    }
+    
+    
+    
+    #about-indonesia .tourist-info .button button{
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        background-color: #00373b;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        transition: .35s;
+        cursor: pointer;
+    }
+    
+    #about-indonesia .tourist-info .button:hover button{
+        background-color: #026868;
+    }
+    
+    
+    #about-indonesia .tourist-info{
+        margin-bottom: 130px;
+    }
+    
+    
+    #about-indonesia .tourist-info .title-statistic{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    
+    #about-indonesia .tourist-info .title-statistic h4{
+        color: #026868;
+        font-family: 'Merienda', cursive;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #about-indonesia .tourist-info .title-statistic h4 span{
+        color: #00373b;
+        font-size: 19px;
+        margin-top: 15px;
+        font-family: 'Merienda', cursive;
+        font-weight: 700;
+        margin-top: -8px;
+    }
+
+    #destination .destination-select{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        width: 576px;
+      
+    
+    }
+
+    #destination .more-des{
+        display: none;
+    }
+    
+    #destination .more2{
+        width: 100px;
+       padding: 10px 5px;
+        text-align: center;
+        background-color: #00454A;
+        display: block;
+        transition: .35s;
+
+    }
+
+    #destination .more2 a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+
+        transition: 0.3;
+        
+
+    }
+
+    #destination .more2:hover{
+       width: 118px;
+       letter-spacing: 2px;
+    }
+
+    
+
+
+.footer{
+    height: 200vh;
+    padding: 60px;
+    position: relative;
+  
+}
+.footer .last{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 35px;
+    align-items: center;
+
+}
+
+.footer .last .subscribe{
+    width: 580px;
+    padding: 20px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    row-gap: 5px;
+    margin-bottom: 30px;
+    
+}
+.footer .last .subscribe h4{
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Merienda', cursive;
+    
+}
+.footer .last .subscribe p{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .last .subscribe .form button{
+    border: none;
+    background-color: #00454A;
+    color: white;
+    padding: 7px;
+}
+.footer .last .subscribe .form input{
+    outline: none;
+    width: 220px;
+    height: 35px;
+    
+
+}
+
+.footer .last .subscribe a{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+    font-weight: 500;
+  
+}
+
+.footer .credits{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 630px;
+    
+    background-color: #00454A;
+    display: grid;
+    grid-template-areas: "section1 section1"
+                         "section section3"
+                         "section2 section2";
+   grid-template-rows: 1fr 1.3fr 0.7fr;
+   
+    
+  
+}
+
+.footer .credits .section1{
+    grid-area: section1;
+    
+}
+
+.footer .credits .section{
+    grid-area: section;
+}
+
+.footer .credits .section3{
+    grid-area: section3;
+}
+
+.footer .credits .section2{
+    grid-area: section2;
+}
+
+.footer .last .about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.footer .credits .section1, .section2, .section3, .section{
+    width: 100%;
+}
+
+.footer .credits .section{
+    width: 220px;
+}
+
+.footer .credits .section, .section3{
+    text-align: center;
+}
+
+.footer .backgroun img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 85%;
+    filter: brightness(55%);
+   }
+
+header .nav-menu{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+   }
+
+   header .nav-menu i{
+       color: rgb(70, 66, 66);
+       font-size: 30px;
+       font-weight: 300;
+       
+   }
+
+   header.sticky .nav-menu i{
+    color: rgb(70, 66, 66);
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+
+    header .logo{
+        color: rgb(70, 66, 66);
+    }
+
+}
